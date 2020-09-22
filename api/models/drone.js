@@ -20,7 +20,7 @@ var droneSchema = new Schema({
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 
   reactions: [{ type: Object }],
-  tags: { positives: [{ type: String }], negatives: [{ type: string }] },
+  tags: { positives: [{ type: String }], negatives: [{ type: String }] },
 
   isFlagged: {
     type: Boolean,
